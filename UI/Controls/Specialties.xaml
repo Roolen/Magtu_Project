@@ -1,0 +1,266 @@
+﻿<UserControl x:Class="UI.Controls.Specialties"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:UI.Controls"
+             mc:Ignorable="d" 
+             d:DesignWidth="800" Margin="0 0 0 -1950" Height="1950">
+    <Grid>
+        <Border VerticalAlignment="Top" HorizontalAlignment="Left" Background="White" Height="1950" Width="800">
+            <Grid>
+
+                <Label Foreground="#525e6c" FontFamily="/UI;component/Fonts/#Amsterdam" FontSize="14" x:Name="label" 
+               HorizontalContentAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+                    University Connection Application
+                </Label>
+
+                <Label x:Name="label1" HorizontalContentAlignment="Left" HorizontalAlignment="Stretch" Margin="0,32,0,0"
+               VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="#519bca">
+                    Направление подготовки, специальности
+                </Label>
+
+                <Label FontSize="14" x:Name="label2" HorizontalContentAlignment="Left" HorizontalAlignment="Stretch"
+                       Margin="4,56,0,0" VerticalAlignment="Top" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="#8c8d8f">
+                    Обновлено: 26 февраля 2019
+                </Label>
+
+                <TextBlock x:Name="Squad1"  HorizontalAlignment="Stretch" Margin="4,98,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="#519bca">
+                    ОТДЕЛЕНИЕ №1 «ИНФОРМАЦИОННЫЕ ТЕХНОЛОГИИ»
+                </TextBlock>
+
+                <TextBlock x:Name="Sq1Sp1" HorizontalAlignment="Stretch" Margin="4,125,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black">
+                    09.00.00 ИНФОРМАТИКА И ВЫЧИСЛИТЕЛЬНАЯ ТЕХНИКА
+                </TextBlock>
+
+                <TextBlock x:Name="Sq1Sp2" HorizontalAlignment="Stretch" Margin="4,163,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black">
+                    09.02.07 Информационные системы и программирование
+                </TextBlock>
+
+                <TextBlock x:Name="Sq1Sp3" HorizontalAlignment="Stretch" Margin="4,190,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
+                    09.02.01 Компьютерные системы и комплексы
+                </TextBlock>
+
+                <TextBlock x:Name="Sq1Sp3_Copy" HorizontalAlignment="Stretch" Margin="4,217,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black">
+                    09.02.03 Программирование в компьютерных системах
+                </TextBlock>
+
+                <TextBlock TextWrapping="Wrap" x:Name="Squad2"  HorizontalAlignment="Stretch" Margin="4,257,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="#519bca">
+                    ОТДЕЛЕНИЕ №2 «МЕТАЛЛУРГИЯ, ЭКСПЛУАТАЦИЯ И ОБСЛУЖИВАНИЕ ЭЛЕКТРООБОРУДОВАНИЯ»
+                </TextBlock>
+
+                <TextBlock TextWrapping="Wrap" x:Name="Sq2Sp1"  HorizontalAlignment="Stretch" Margin="4,346,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
+                    13.02.11 Техническая эксплуатация и обслуживание электрического и электромеханического оборудования (по отраслям)
+                </TextBlock>
+
+                <TextBlock x:Name="Sq2Sp2" HorizontalAlignment="Stretch" Margin="4,451,-4,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
+                    22.02.01 Металлургия черных металлов
+                </TextBlock>
+
+                <TextBlock x:Name="Sq2Sp2_Copy" HorizontalAlignment="Stretch" Margin="4,478,-4,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black">
+                    22.02.05 Обработка металлов давлением
+                </TextBlock>
+
+                <TextBlock TextWrapping="Wrap" x:Name="Squad2_Copy"  HorizontalAlignment="Stretch" Margin="4,518,-4,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="#519bca">
+                    ОТДЕЛЕНИЕ №3 «МЕХАНИЧЕСКОЕ, ГИДРАВЛИЧЕСКОЕ ОБОРУДОВАНИЕ, ТРАНСПОРТА И АВТОМАТИЗАЦИЯ ТЕХНОЛОГИЧЕСКИХ ПРОЦЕССОВ»
+                </TextBlock>
+
+                <TextBlock x:Name="Sq1Sp1_Copy" HorizontalAlignment="Stretch" Margin="4,305,-4,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
+                    13.00.00 ЭЛЕКТРО И ТЕПЛОЭНЕРГЕТИКА
+                </TextBlock>
+
+                <TextBlock x:Name="Sq1Sp1_Copy1" HorizontalAlignment="Stretch" Margin="4,414,-4,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
+                    22.00.00 ТЕХНОЛОГИЯ МАТЕРИАЛОВ
+                </TextBlock>
+
+                <TextBlock x:Name="Sq1Sp1_Copy2" HorizontalAlignment="Stretch" Margin="4,566,-4,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black">
+                    15.00.00 МАШИНОСТРОЕНИЕ
+                </TextBlock>
+
+                <TextBlock TextWrapping="Wrap" x:Name="Sq2Sp1_Copy"  HorizontalAlignment="Stretch" Margin="4,604,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
+                    15.02.01 Монтаж и техническая эксплуатация промышленного оборудования (по отраслям)
+                </TextBlock>
+
+                <TextBlock TextWrapping="Wrap" x:Name="Sq2Sp1_Copy1"  HorizontalAlignment="Stretch" Margin="4,632,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
+                    15.02.03 Техническая эксплуатация гидравлических машин, гидроприводов и гидропневмоавтоматики
+                </TextBlock>
+
+                <TextBlock TextWrapping="Wrap" x:Name="Sq2Sp1_Copy2"  HorizontalAlignment="Stretch" Margin="4,680,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
+                    15.02.07 Автоматизация технологических процессов и производств (по отраслям)
+                </TextBlock>
+
+                <TextBlock TextWrapping="Wrap" x:Name="Sq2Sp1_Copy3"  HorizontalAlignment="Stretch" Margin="4,706,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
+                    15.02.12 Монтаж, техническое обслуживание и ремонт промышленного оборудования (по отраслям)
+                </TextBlock>
+
+                <TextBlock TextWrapping="Wrap" x:Name="Sq2Sp1_Copy4"  HorizontalAlignment="Stretch" Margin="4,754,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
+                    15.02.14 Оснащение средствами автоматизации технологических процессов и производств (по отраслям)
+                </TextBlock>
+
+                <TextBlock x:Name="Sq1Sp1_Copy3"  HorizontalAlignment="Stretch" Margin="4,823,-4,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
+                    23.00.00 ТЕХНИКА И ТЕХНОЛОГИИ НАЗЕМНОГО ТРАНСПОРТА
+                </TextBlock>
+
+                <TextBlock TextWrapping="Wrap" x:Name="Sq2Sp1_Copy5"  HorizontalAlignment="Stretch" Margin="4,860,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
+                    23.02.03 Техническое обслуживание и ремонт автомобильного транспорта
+                </TextBlock>
+
+                <TextBlock TextWrapping="Wrap" x:Name="Sq2Sp1_Copy6"  HorizontalAlignment="Stretch" Margin="4,887,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
+                    23.02.04 Техническая эксплуатация подъемно-транспортных, строительных, дорожных машин и оборудования (по отраслям)
+                </TextBlock>
+
+                <TextBlock TextWrapping="Wrap" x:Name="Sq2Sp1_Copy7"  HorizontalAlignment="Stretch" Margin="4,935,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
+                    23.02.07 Техническое обслуживание и ремонт двигателей, систем и агрегатов автомобилей
+                </TextBlock>
+
+                <TextBlock TextWrapping="Wrap" x:Name="Squad2_Copy1"  HorizontalAlignment="Stretch" Margin="4,971,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="#519bca">
+                    ОТДЕЛЕНИЕ №4 «СТРОЛЬТЕЛЬСТВО, ЭКОНОМИКА И СФЕРА ОБСЛУЖИВАНИЯ»
+                </TextBlock>
+
+                <TextBlock x:Name="Sq1Sp1_Copy4"  HorizontalAlignment="Stretch" Margin="4,998,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
+                    19.00.00 ПРОМЫШЛЕННАЯ ЭКОЛОГИЯ И БИОТЕХНОЛОГИИ
+                </TextBlock>
+
+                <TextBlock TextWrapping="Wrap" x:Name="Sq2Sp1_Copy8"  HorizontalAlignment="Stretch" Margin="4,1037,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
+                    19.02.10 Технология продукции общественного питания
+                </TextBlock>
+
+                <TextBlock x:Name="Sq1Sp1_Copy5"  HorizontalAlignment="Stretch" Margin="4,1077,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
+                    21.00.00 ПРИКЛАДНАЯ ГЕОЛОГИЯ, ГОРНОЕ ДЕЛО, НЕФТЕГАЗОВОЕ ДЕЛО И ГЕОДЕЗИЯ
+                </TextBlock>
+
+                <TextBlock TextWrapping="Wrap" x:Name="Sq2Sp1_Copy9"  HorizontalAlignment="Stretch" Margin="4,1117,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
+                    21.02.05 Земельно-имущественные отношения
+                </TextBlock>
+
+                <TextBlock x:Name="Sq1Sp1_Copy6"  HorizontalAlignment="Stretch" Margin="4,1159,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
+                    38.00.00 ЭКОНОМИКА И УПРАВЛЕНИЕ
+                </TextBlock>
+
+                <TextBlock TextWrapping="Wrap" x:Name="Sq2Sp1_Copy10"  HorizontalAlignment="Stretch" Margin="4,1199,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
+                    38.02.01 Экономика и бухгалтерский учет (по отраслям)
+                </TextBlock>
+
+                <TextBlock TextWrapping="Wrap" x:Name="Sq2Sp1_Copy11"  HorizontalAlignment="Stretch" Margin="4,1226,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
+                    38.02.05 Товароведение и экспертиза качества потребительских товаров (последний выпуск)
+                </TextBlock>
+
+                <TextBlock x:Name="Sq1Sp1_Copy7"  HorizontalAlignment="Stretch" Margin="4,1267,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
+                    43.00.00 СЕРВИС И ТУРИЗМ
+                </TextBlock>
+
+                <TextBlock TextWrapping="Wrap" x:Name="Sq2Sp1_Copy12"  HorizontalAlignment="Stretch" Margin="4,1309,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
+                    43.02.15 Поварское и кондитерское дело
+                </TextBlock>
+
+                <TextBlock x:Name="Sq1Sp1_Copy8"  HorizontalAlignment="Stretch" Margin="4,1352,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
+                    46.00.00 ИСТОРИЯ И АРХЕОЛОГИЯ
+                </TextBlock>
+
+                <TextBlock TextWrapping="Wrap" x:Name="Sq2Sp1_Copy13"  HorizontalAlignment="Stretch" Margin="4,1394,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
+                    46.02.01 Документационное обеспечение управления и архивоведение
+                </TextBlock>
+
+                <TextBlock TextWrapping="Wrap" x:Name="Squad2_Copy2"  HorizontalAlignment="Stretch" Margin="4,1433,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="#519bca">
+                    ОТДЕЛЕНИЕ №5 «ПРОФЕССИОНАЛЬНОЕ ОБУЧЕНИЕ»
+                </TextBlock>
+
+                <TextBlock x:Name="Sq1Sp1_Copy9"  HorizontalAlignment="Stretch" Margin="4,1460,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
+                    08.00.00 ТЕХНИКА И ТЕХОЛОГИИ СТРОИТЕЛЬСТВА
+                </TextBlock>
+                
+                <TextBlock TextWrapping="Wrap" x:Name="Sq2Sp1_Copy14"  HorizontalAlignment="Stretch" Margin="4,1500,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
+                    08.02.01 Строительство и эксплуатация зданий и сооружений
+                </TextBlock>
+                
+                <TextBlock TextWrapping="Wrap" x:Name="Sq2Sp1_Copy15"  HorizontalAlignment="Stretch" Margin="4,1527,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
+                    08.02.09 Монтаж, наладка и эксплуатация электрооборудования промышленных и гражданских зданий
+                </TextBlock>
+                
+                <TextBlock x:Name="Sq1Sp1_Copy10"  HorizontalAlignment="Stretch" Margin="4,1590,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
+                    44.00.00 ОБРАЗОВАНИЕ И ПЕДАГОГИЧЕСКИЕ НАУКИ
+                </TextBlock>
+                
+                <TextBlock TextWrapping="Wrap" x:Name="Sq2Sp1_Copy16"  HorizontalAlignment="Stretch" Margin="4,1631,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
+                    44.02.06 (Углубленная) Профессиональное обучение. Строительство и эксплуатация зданий и сооружений
+                </TextBlock>
+                
+                <TextBlock TextWrapping="Wrap" x:Name="Sq2Sp1_Copy17"  HorizontalAlignment="Stretch" Margin="4,1679,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
+                    44.02.06 (Углубленная) Профессиональное обучение. Конструирование, моделирование и технология швейных изделий
+                </TextBlock>
+                
+                <TextBlock TextWrapping="Wrap" x:Name="Sq2Sp1_Copy18"  HorizontalAlignment="Stretch" Margin="4,1727,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
+                    44.02.06 (Углубленная) Профессиональное обучение. Техническое обслуживание и ремонт автомобильного транспорта
+                </TextBlock>
+                
+                <TextBlock TextWrapping="Wrap" x:Name="Sq2Sp1_Copy19"  HorizontalAlignment="Stretch" Margin="4,1775,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
+                    44.02.06 (Углубленная) Профессиональное обучение. Сварочное производство
+                </TextBlock>
+                
+                <TextBlock TextWrapping="Wrap" x:Name="Sq2Sp1_Copy20"  HorizontalAlignment="Stretch" Margin="4,1802,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
+                    44.02.06 (Углубленная) Профессиональное обучение. Парикмахерское искусство.
+                </TextBlock>
+                
+                <TextBlock TextWrapping="Wrap" x:Name="Sq2Sp1_Copy21"  HorizontalAlignment="Stretch" Margin="4,1829,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
+                    44.02.06 (Углубленная) Профессиональное обучение. Техническая эксплуатация гидравлических машин, гидроприводов и гидропневмоавтоматики
+                </TextBlock>
+                
+                <TextBlock TextWrapping="Wrap" x:Name="Sq2Sp1_Copy22"  HorizontalAlignment="Stretch" Margin="4,1877,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
+                    44.02.06 (Углубленная) Профессиональное обучение. Техническая эксплуатация и обслуживание электрического и электромеханического оборудования (по отраслям)
+                </TextBlock>
+                
+                <TextBlock TextWrapping="Wrap" x:Name="Sq2Sp1_Copy23"  HorizontalAlignment="Stretch" Margin="4,1925,0,0"
+                    VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
+                    44.02.06 (Углубленная) Профессиональное обучение. Обработка металлов давлением
+                </TextBlock>
+                
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>
