@@ -10,18 +10,13 @@
         <Border VerticalAlignment="Top" HorizontalAlignment="Left" Padding="10px">
             <Grid>
 
-                <Label Foreground="#525e6c" FontFamily="/UI;component/Fonts/#Amsterdam" FontSize="14" x:Name="label" 
-               HorizontalContentAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Top">
-                    University Connection Application
-                </Label>
-
-                <Label x:Name="label1" HorizontalContentAlignment="Left" HorizontalAlignment="Stretch" Margin="0,32,0,0"
+                <Label x:Name="label1" HorizontalContentAlignment="Left" HorizontalAlignment="Stretch" Margin="0,10,0,0"
                VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="#519bca">
                     Направление подготовки, специальности
                 </Label>
 
                 <Label FontSize="14" x:Name="label2" HorizontalContentAlignment="Left" HorizontalAlignment="Stretch"
-                       Margin="4,56,0,0" VerticalAlignment="Top" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="#8c8d8f">
+                       Margin="4,34,0,0" VerticalAlignment="Top" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="#8c8d8f">
                     Обновлено: 26 февраля 2019
                 </Label>
 
@@ -204,62 +199,62 @@
                     VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
                     08.00.00 ТЕХНИКА И ТЕХОЛОГИИ СТРОИТЕЛЬСТВА
                 </TextBlock>
-                
+
                 <TextBlock TextWrapping="Wrap" x:Name="Sq2Sp1_Copy14"  HorizontalAlignment="Stretch" Margin="4,1500,0,0"
                     VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
                     08.02.01 Строительство и эксплуатация зданий и сооружений
                 </TextBlock>
-                
+
                 <TextBlock TextWrapping="Wrap" x:Name="Sq2Sp1_Copy15"  HorizontalAlignment="Stretch" Margin="4,1527,0,0"
                     VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
                     08.02.09 Монтаж, наладка и эксплуатация электрооборудования промышленных и гражданских зданий
                 </TextBlock>
-                
+
                 <TextBlock x:Name="Sq1Sp1_Copy10"  HorizontalAlignment="Stretch" Margin="4,1590,0,0"
                     VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
                     44.00.00 ОБРАЗОВАНИЕ И ПЕДАГОГИЧЕСКИЕ НАУКИ
                 </TextBlock>
-                
+
                 <TextBlock TextWrapping="Wrap" x:Name="Sq2Sp1_Copy16"  HorizontalAlignment="Stretch" Margin="4,1631,0,0"
                     VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
                     44.02.06 (Углубленная) Профессиональное обучение. Строительство и эксплуатация зданий и сооружений
                 </TextBlock>
-                
+
                 <TextBlock TextWrapping="Wrap" x:Name="Sq2Sp1_Copy17"  HorizontalAlignment="Stretch" Margin="4,1679,0,0"
                     VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
                     44.02.06 (Углубленная) Профессиональное обучение. Конструирование, моделирование и технология швейных изделий
                 </TextBlock>
-                
+
                 <TextBlock TextWrapping="Wrap" x:Name="Sq2Sp1_Copy18"  HorizontalAlignment="Stretch" Margin="4,1727,0,0"
                     VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
                     44.02.06 (Углубленная) Профессиональное обучение. Техническое обслуживание и ремонт автомобильного транспорта
                 </TextBlock>
-                
+
                 <TextBlock TextWrapping="Wrap" x:Name="Sq2Sp1_Copy19"  HorizontalAlignment="Stretch" Margin="4,1775,0,0"
                     VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
                     44.02.06 (Углубленная) Профессиональное обучение. Сварочное производство
                 </TextBlock>
-                
+
                 <TextBlock TextWrapping="Wrap" x:Name="Sq2Sp1_Copy20"  HorizontalAlignment="Stretch" Margin="4,1802,0,0"
                     VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
                     44.02.06 (Углубленная) Профессиональное обучение. Парикмахерское искусство.
                 </TextBlock>
-                
+
                 <TextBlock TextWrapping="Wrap" x:Name="Sq2Sp1_Copy21"  HorizontalAlignment="Stretch" Margin="4,1829,0,0"
                     VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
                     44.02.06 (Углубленная) Профессиональное обучение. Техническая эксплуатация гидравлических машин, гидроприводов и гидропневмоавтоматики
                 </TextBlock>
-                
+
                 <TextBlock TextWrapping="Wrap" x:Name="Sq2Sp1_Copy22"  HorizontalAlignment="Stretch" Margin="4,1877,0,0"
                     VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
                     44.02.06 (Углубленная) Профессиональное обучение. Техническая эксплуатация и обслуживание электрического и электромеханического оборудования (по отраслям)
                 </TextBlock>
-                
+
                 <TextBlock TextWrapping="Wrap" x:Name="Sq2Sp1_Copy23"  HorizontalAlignment="Stretch" Margin="4,1925,0,0"
                     VerticalAlignment="Top" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam" Foreground="Black" >
                     44.02.06 (Углубленная) Профессиональное обучение. Обработка металлов давлением
                 </TextBlock>
-                
+
             </Grid>
         </Border>
     </Grid>
