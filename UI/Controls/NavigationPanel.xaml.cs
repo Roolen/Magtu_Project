@@ -20,14 +20,21 @@ namespace UI.Controls
     /// </summary>
     public partial class NavigationPanel : UserControl
     {
+        public event Action CpecialsButtonClick;
         public NavigationPanel()
         {
             InitializeComponent();
+            
         }
 
         private void CloseButton_Click(object sender, RoutedEventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void CpecialsButton_Click(object sender, RoutedEventArgs e)
+        {
+            CpecialsButtonClick.Invoke();
         }
     }
 }

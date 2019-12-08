@@ -39,5 +39,13 @@ namespace UI.ViewModels
 
             NewsPanel.Add(newsPanel);
         }
+
+        public void PresentSpecialities()
+        {
+            StackPanel specialties = new StackPanel();
+            specialties.Children.Add(new Specialties());
+            NewsPanel.Clear();
+            NewsPanel.Add(specialties);
+        }
     }
 }

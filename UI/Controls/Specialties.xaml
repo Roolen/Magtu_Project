@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignWidth="800" Margin="0 0 0 -1950" Height="1950">
     <Grid>
-        <Border VerticalAlignment="Top" HorizontalAlignment="Left" Background="White" Height="1950" Width="800">
+        <Border VerticalAlignment="Top" HorizontalAlignment="Left" Height="1950" Width="800">
             <Grid>
 
                 <Label Foreground="#525e6c" FontFamily="/UI;component/Fonts/#Amsterdam" FontSize="14" x:Name="label" 
