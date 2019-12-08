@@ -46,7 +46,8 @@
 
         <Button Name="AboutCollegeButton" Content="О КОЛЛЕДЖЕ" VerticalAlignment="Top" HorizontalAlignment="Center" 
                 Margin="94,364,91,0" Background="#00FFFFFF" BorderThickness="0"
-                   Foreground="#E3E5EC" FontSize="18" FontFamily="/UI;component/Fonts/#Cleanvertising"/>
+                Foreground="#E3E5EC" FontSize="18" FontFamily="/UI;component/Fonts/#Cleanvertising"
+                Click="AboutCollegeButton_Click"/>
 
         <Button Name="AboutAppButton" Content="О приложении" VerticalAlignment="Bottom" HorizontalAlignment="Center" 
                 Margin="0 0 0 10" Background="#00FFFFFF" BorderThickness="0"

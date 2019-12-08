@@ -14,13 +14,13 @@ namespace UI.ViewModels
 {
     class MainViewModel : BaseViewModel
     {
-        public ObservableCollection<StackPanel> NewsPanel { get; set; }
+        public ObservableCollection<object> ContentPanel { get; set; }
 
         string _address = @"https://newlms.magtu.ru/";
 
         public MainViewModel()
         {
-            NewsPanel = new ObservableCollection<StackPanel>();
+            ContentPanel = new ObservableCollection<object>();
         }
 
         public void PresentNews()
@@ -37,15 +37,19 @@ namespace UI.ViewModels
                 newsPanel.Children.Add(post);
             }
 
-            NewsPanel.Add(newsPanel);
+            ContentPanel.Add(newsPanel);
         }
 
         public void PresentSpecialities()
         {
-            StackPanel specialties = new StackPanel();
-            specialties.Children.Add(new Specialties());
-            NewsPanel.Clear();
-            NewsPanel.Add(specialties);
+            ContentPanel.Clear();
+            ContentPanel.Add(new Specialties());
+        }
+
+        public void PresentAboutCollege()
+        {
+            ContentPanel.Clear();
+            ContentPanel.Add(new AboutCollege());
         }
     }
 }

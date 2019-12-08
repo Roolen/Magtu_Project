@@ -21,6 +21,7 @@ namespace UI.Controls
     public partial class NavigationPanel : UserControl
     {
         public event Action CpecialsButtonClick;
+        public event Action AboutCollegeButtonClick;
         public NavigationPanel()
         {
             InitializeComponent();
@@ -35,6 +36,11 @@ namespace UI.Controls
         private void CpecialsButton_Click(object sender, RoutedEventArgs e)
         {
             CpecialsButtonClick.Invoke();
+        }
+
+        private void AboutCollegeButton_Click(object sender, RoutedEventArgs e)
+        {
+            AboutCollegeButtonClick.Invoke();
         }
     }
 }

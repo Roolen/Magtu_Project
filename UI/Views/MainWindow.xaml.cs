@@ -51,6 +51,7 @@ namespace UI
             Dispatcher.InvokeAsync(vm.PresentNews, System.Windows.Threading.DispatcherPriority.Background);
 
             NavPanel.CpecialsButtonClick += vm.PresentSpecialities;
+            NavPanel.AboutCollegeButtonClick += vm.PresentAboutCollege;
         }
     }
 }

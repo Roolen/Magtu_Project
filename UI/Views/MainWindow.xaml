@@ -20,7 +20,7 @@
                                   VerticalAlignment="Stretch" Width="300" Height="800"/>
 
         <ScrollViewer Name="ContentMain" Margin="0,20,300,0" Loaded="ContentMain_Loaded">
-            <ItemsControl Name="templ" ItemsSource="{Binding NewsPanel}">
+            <ItemsControl Name="templ" ItemsSource="{Binding ContentPanel}">
                 
             </ItemsControl>
         </ScrollViewer>
