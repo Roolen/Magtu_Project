@@ -28,6 +28,27 @@ namespace UI.Controls
             
         }
 
+        private static IEnumerable<T> FindVisualChildren<T>(DependencyObject depObj) where T : DependencyObject
+        {
+            if(depObj != null)
+                for(int i = 0; i < VisualTreeHelper.GetChildrenCount(depObj);i++)
+                {
+                    DependencyObject child = VisualTreeHelper.GetChild(depObj, i);
+                    if (child != null && child is T)
+                        yield return (T)child;
+                    foreach (T childOfChild in FindVisualChildren<T>(child))
+                        yield return childOfChild;
+                }
+        }
+
+        private void ChangeSelectedZone(Button button)
+        {
+            foreach(Button NavigationButtons in FindVisualChildren<Button>(this))            
+                NavigationButtons.Foreground = new SolidColorBrush(Color.FromRgb(227, 229, 236));     
+            SelectZone.Margin = new Thickness(0, button.Margin.Top - 10, 0, 0);
+            button.Foreground = new SolidColorBrush(Color.FromArgb(0xFF, 0x2A, 0x2C, 0x44));
+        }
+
         private void CloseButton_Click(object sender, RoutedEventArgs e)
         {
             Environment.Exit(0);
@@ -36,11 +57,13 @@ namespace UI.Controls
         private void CpecialsButton_Click(object sender, RoutedEventArgs e)
         {
             CpecialsButtonClick.Invoke();
+            ChangeSelectedZone(CpecialsButton);
         }
 
         private void AboutCollegeButton_Click(object sender, RoutedEventArgs e)
         {
             AboutCollegeButtonClick.Invoke();
+            ChangeSelectedZone(AboutCollegeButton);
         }
     }
 }
