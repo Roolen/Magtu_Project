@@ -26,6 +26,11 @@ namespace UI.ViewModels
 
         public void PresentNews(object dispatcher)
         {
+            ((Dispatcher)dispatcher).BeginInvoke(new Action(() =>
+            {
+                Loading loading = new Loading();
+                ContentPanel.Add(loading);
+            }));
 
             var task = Task.Run(() => ParserHtml.ParseNews(_address));
             task.Wait();
@@ -40,6 +45,7 @@ namespace UI.ViewModels
                     newsPanel.Children.Add(post);
                 }
 
+                ContentPanel.Clear();
                 ContentPanel.Add(newsPanel);
             }));
             
