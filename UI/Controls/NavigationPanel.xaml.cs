@@ -43,8 +43,8 @@ namespace UI.Controls
 
         private void ChangeSelectedZone(Button button)
         {
-            foreach(Button NavigationButtons in FindVisualChildren<Button>(this))            
-                NavigationButtons.Foreground = new SolidColorBrush(Color.FromRgb(227, 229, 236));     
+            foreach(Button NavigationButtons in FindVisualChildren<Button>(this))
+                NavigationButtons.Foreground = new SolidColorBrush(Color.FromRgb(227, 229, 236));
             SelectZone.Margin = new Thickness(0, button.Margin.Top - 10, 0, 0);
             button.Foreground = new SolidColorBrush(Color.FromArgb(0xFF, 0x2A, 0x2C, 0x44));
         }

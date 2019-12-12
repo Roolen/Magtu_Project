@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -34,7 +35,6 @@ namespace UI
 
             NavPanel.SelectZone.Margin = new Thickness(0, NavPanel.NewsButton.Margin.Top - 10, 0, 0);
             NavPanel.NewsButton.Foreground = new SolidColorBrush(Color.FromArgb(0xFF, 0x2A, 0x2C, 0x44));
-
         }
 
         
@@ -48,7 +48,9 @@ namespace UI
         {
             var vm = DataContext as MainViewModel;
             if (vm == null) return;
-            Dispatcher.InvokeAsync(vm.PresentNews, System.Windows.Threading.DispatcherPriority.Background);
+
+            Thread newThread = new Thread(new ParameterizedThreadStart(vm.PresentNews));
+            newThread.Start(Dispatcher);
 
             NavPanel.CpecialsButtonClick += vm.PresentSpecialities;
             NavPanel.AboutCollegeButtonClick += vm.PresentAboutCollege;
