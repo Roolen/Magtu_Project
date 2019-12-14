@@ -20,6 +20,7 @@ namespace UI.Controls
     /// </summary>
     public partial class NavigationPanel : UserControl
     {
+        public event Action NewsButtonClick;
         public event Action CpecialsButtonClick;
         public event Action AboutCollegeButtonClick;
         public NavigationPanel()
@@ -52,6 +53,12 @@ namespace UI.Controls
         private void CloseButton_Click(object sender, RoutedEventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void NewsButton_Click(object sender, RoutedEventArgs e)
+        {
+            NewsButtonClick.Invoke();
+            ChangeSelectedZone(NewsButton);
         }
 
         private void CpecialsButton_Click(object sender, RoutedEventArgs e)

@@ -29,7 +29,8 @@
 
         <Button Name="NewsButton" Content="НОВОСТИ" VerticalAlignment="Top" HorizontalAlignment="Center"
                 Margin="109,184,106,0" Background="#00FFFFFF" BorderThickness="0"
-                   Foreground="#E3E5EC" FontSize="18" FontFamily="/UI;component/Fonts/#Cleanvertising"/>
+                   Foreground="#E3E5EC" FontSize="18" FontFamily="/UI;component/Fonts/#Cleanvertising"
+                Click="NewsButton_Click"/>
 
         <Button Name="CoursesButton" Content="КУРСЫ" VerticalAlignment="Top" HorizontalAlignment="Center" 
                 Margin="121,229,118,0" Background="#00FFFFFF" BorderThickness="0"
