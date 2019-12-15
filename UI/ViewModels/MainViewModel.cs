@@ -18,6 +18,7 @@ namespace UI.ViewModels
     {
         public ObservableCollection<object> ContentPanel { get; set; }
         private bool IsLoading = false;
+        private LogInWindow LogInWindow = null;
 
         string _address = @"https://newlms.magtu.ru/";
 
@@ -28,8 +29,15 @@ namespace UI.ViewModels
 
         public void LogIn()
         {
-            LogInWindow loginWindow = new LogInWindow();
-            loginWindow.Show();
+            if (LogInWindow != null) return;
+
+            LogInWindow = new LogInWindow();
+            LogInWindow.Show();
+
+            LogInWindow.Closed += new EventHandler((sender, e) =>
+            {
+                LogInWindow = null;
+            });
         }
 
         public void PresentNews(object dispatcher)
