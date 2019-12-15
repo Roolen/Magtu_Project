@@ -16,6 +16,7 @@ namespace UI.ViewModels
     class MainViewModel : BaseViewModel
     {
         public ObservableCollection<object> ContentPanel { get; set; }
+        private bool IsLoading = false;
 
         string _address = @"https://newlms.magtu.ru/";
 
@@ -26,9 +27,12 @@ namespace UI.ViewModels
 
         public void PresentNews(object dispatcher)
         {
+            IsLoading = true;
+
             ((Dispatcher)dispatcher).BeginInvoke(new Action(() =>
             {
                 Loading loading = new Loading();
+                ContentPanel.Clear();
                 ContentPanel.Add(loading);
             }));
 
@@ -45,20 +49,24 @@ namespace UI.ViewModels
                     newsPanel.Children.Add(post);
                 }
 
+                if (IsLoading == false) return;
+
                 ContentPanel.Clear();
                 ContentPanel.Add(newsPanel);
+                IsLoading = false;
             }));
-            
         }
 
         public void PresentSpecialities()
         {
+            IsLoading = false;
             ContentPanel.Clear();
             ContentPanel.Add(new Specialties());
         }
 
         public void PresentAboutCollege()
         {
+            IsLoading = false;
             ContentPanel.Clear();
             ContentPanel.Add(new AboutCollege());
         }

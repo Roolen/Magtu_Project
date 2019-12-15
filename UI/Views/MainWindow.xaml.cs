@@ -52,7 +52,11 @@ namespace UI
             Thread newThread = new Thread(new ParameterizedThreadStart(vm.PresentNews));
             newThread.Start(Dispatcher);
 
-            NavPanel.NewsButtonClick += new Action (() => { vm.PresentNews(Dispatcher); });
+            NavPanel.NewsButtonClick += new Action (() => 
+            {
+                Thread thread = new Thread(new ParameterizedThreadStart(vm.PresentNews));
+                thread.Start(Dispatcher);
+            });
             NavPanel.CpecialsButtonClick += vm.PresentSpecialities;
             NavPanel.AboutCollegeButtonClick += vm.PresentAboutCollege;
         }
