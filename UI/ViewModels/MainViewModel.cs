@@ -10,6 +10,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Threading;
 using UI.Controls;
+using UI.Views;
 
 namespace UI.ViewModels
 {
@@ -23,6 +24,12 @@ namespace UI.ViewModels
         public MainViewModel()
         {
             ContentPanel = new ObservableCollection<object>();
+        }
+
+        public void LogIn()
+        {
+            LogInWindow loginWindow = new LogInWindow();
+            loginWindow.Show();
         }
 
         public void PresentNews(object dispatcher)

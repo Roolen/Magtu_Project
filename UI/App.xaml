@@ -96,7 +96,7 @@
         </Style>
         
 
-        
+        <!--##############################################-->
         <!-- Panel Button Style -->
         <Style x:Key="FocusVisual">
             <Setter Property="Control.Template">
@@ -145,6 +145,112 @@
                 </Setter.Value>
             </Setter>
         </Style>
+         <!--##############################################-->
+         <!-- Radius Button Style -->
+        <Style x:Key="FocusVisualRadius">
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Rectangle Margin="2"
+                                   SnapsToDevicePixels="true"
+                                   Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"
+                                   StrokeDashArray="1 2"
+                                   StrokeThickness="1"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
 
+        <SolidColorBrush x:Key="ButtonRadius.Static.Background"
+                         Color="White"/>
+        <SolidColorBrush x:Key="ButtonRadius.MouseOver.Background"
+                         Color="#AED3E5"/>
+
+        <Style x:Key="RadiusButtonStyle" TargetType="{x:Type Button}">
+            <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisualRadius}"/>
+            <Setter Property="Background" Value="{StaticResource ButtonRadius.Static.Background}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="border"
+                                Background="{TemplateBinding Background}"
+                                CornerRadius="10"
+                                SnapsToDevicePixels="True">
+                            <ContentPresenter x:Name="contentPresenter"
+                                              Margin="{TemplateBinding Padding}"
+                                              Focusable="False"
+                                              RecognizesAccessKey="True"
+                                              VerticalAlignment="Center"
+                                              HorizontalAlignment="Center"
+                                              SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter TargetName="border" Property="Background" Value="{StaticResource ButtonRadius.MouseOver.Background}"/>
+                                <Setter TargetName="border" Property="Cursor" Value="Hand"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter TargetName="border" Property="Background" Value="{StaticResource ButtonRadius.Static.Background}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!--##############################################-->
+        <!-- Default Field Style -->
+        <Style x:Key="FocusVisualField">
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Rectangle Margin="2"
+                                   SnapsToDevicePixels="true"
+                                   Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"
+                                   StrokeDashArray="1 2"
+                                   StrokeThickness="1"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <SolidColorBrush x:Key="Field.Static.Background"
+                         Color="White"/>
+        <SolidColorBrush x:Key="Field.MouseOver.Background"
+                         Color="#AED3E5"/>
+
+        <Style x:Key="FieldStyle" TargetType="{x:Type TextBox}">
+            <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisualField}"/>
+            <Setter Property="Background" Value="{StaticResource Field.Static.Background}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TextBox}">
+                        <Border x:Name="border"
+                                Background="{TemplateBinding Background}"
+                                CornerRadius="20"
+                                SnapsToDevicePixels="True">
+                            <ContentPresenter x:Name="contentPresenter"
+                                              Margin="{TemplateBinding Padding}"
+                                              Focusable="False"
+                                              RecognizesAccessKey="True"
+                                              VerticalAlignment="Center"
+                                              HorizontalAlignment="Center"
+                                              SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter TargetName="border" Property="Background" Value="{StaticResource Field.MouseOver.Background}"/>
+                                <Setter TargetName="border" Property="Cursor" Value="Hand"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter TargetName="border" Property="Background" Value="{StaticResource Field.Static.Background}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        
     </Application.Resources>
 </Application>

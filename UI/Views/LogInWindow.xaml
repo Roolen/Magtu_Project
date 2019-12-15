@@ -1,0 +1,54 @@
+﻿<Window x:Class="UI.Views.LogInWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UI.Views"
+        mc:Ignorable="d"
+        Title="LogInWindow" Height="400" Width="500" ResizeMode="NoResize" WindowStyle="None">
+    <Grid>
+        <Rectangle Panel.ZIndex="-2">
+            <Rectangle.Fill>
+                <LinearGradientBrush>
+                    <GradientStop Color="#3E6694" Offset="0"/>
+                    <GradientStop Color="#144046" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Height="30" Fill="#00ffffff" HorizontalAlignment="Stretch" VerticalAlignment="Top" 
+                   MouseLeftButtonDown="DragPlace_MouseLeftButtonDown"
+                   Panel.ZIndex="10"/>
+        
+        <Label Content="Авторизация" HorizontalAlignment="Center" VerticalAlignment="Top"
+               FontSize="20" Foreground="White" FontFamily="/UI;component/Fonts/#Amsterdam"/>
+        
+        
+        <Label Content="Логин" HorizontalAlignment="Center" VerticalAlignment="Center"
+               FontSize="16" Foreground="White" FontFamily="/UI;component/Fonts/#Amsteram"
+               Margin="0 0 0 210"/>
+        <TextBox Name="LoginField" Width="200" Height="30" Margin="0 0 0 150"
+                 VerticalAlignment="Center" HorizontalAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 Style="{DynamicResource FieldStyle}"/>
+        
+        <Label Content="Пароль" HorizontalAlignment="Center" VerticalAlignment="Center"
+               FontSize="16" Foreground="White" FontFamily="/UI;component/Fonts/#Amsteram"
+               Margin="0 0 0 60"/>
+        <TextBox Name="PasswordField" Width="200" Height="30" Margin="0 0 0 0"
+                 VerticalAlignment="Center" HorizontalAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 Style="{DynamicResource FieldStyle}"/>
+
+        <Button Name="LogInButton" Width="100" Height="30"
+                Content="Войти" VerticalAlignment="Bottom" HorizontalAlignment="Center"
+                FontSize="18" Foreground="#024669" FontFamily="/UI;component/Fonts/#Amsterdam"
+                Margin="0 0 0 100"
+                Style="{DynamicResource RadiusButtonStyle}"/>
+
+        <Button Name="CancelButton" Content="отмена"
+                VerticalAlignment="Bottom" HorizontalAlignment="Center"
+                FontSize="16" Foreground="White" FontFamily="/UI;component/Fonts/#Amsterdam"
+                Margin="0 0 0 20"
+                Style="{DynamicResource PanelButtonStyle}"/>
+    </Grid>
+</Window>

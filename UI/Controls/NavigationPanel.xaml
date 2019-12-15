@@ -23,10 +23,10 @@
                 <DropShadowEffect Color="Black" Direction="310" ShadowDepth="8" Opacity="0.2"/>
             </Border.Effect>
         </Border>
-        <Button Content="Вход" VerticalAlignment="Top" HorizontalAlignment="Center"  Margin="0 140 0 0" 
+        <Button Name="LogInButton"  Content="Вход" VerticalAlignment="Top" HorizontalAlignment="Center"  Margin="0 140 0 0" 
                 Background="#00FFFFFF" BorderThickness="0"
                    Foreground="#E3E5EC" FontWeight="Bold" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam"
-                Style="{DynamicResource PanelButtonStyle}"/>
+                Style="{DynamicResource PanelButtonStyle}" Click="LogInButton_Click"/>
 
         <Button Name="NewsButton" Content="НОВОСТИ" VerticalAlignment="Top" HorizontalAlignment="Center"
                 Margin="109,184,106,0" Background="#00FFFFFF" BorderThickness="0"

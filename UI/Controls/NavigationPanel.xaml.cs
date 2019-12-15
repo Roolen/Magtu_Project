@@ -20,6 +20,7 @@ namespace UI.Controls
     /// </summary>
     public partial class NavigationPanel : UserControl
     {
+        public event Action LogInButtonClick;
         public event Action NewsButtonClick;
         public event Action CpecialsButtonClick;
         public event Action AboutCollegeButtonClick;
@@ -53,6 +54,11 @@ namespace UI.Controls
         private void CloseButton_Click(object sender, RoutedEventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void LogInButton_Click(object sender, RoutedEventArgs e)
+        {
+            LogInButtonClick.Invoke();
         }
 
         private void NewsButton_Click(object sender, RoutedEventArgs e)
