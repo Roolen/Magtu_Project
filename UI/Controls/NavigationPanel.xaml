@@ -25,34 +25,39 @@
         </Border>
         <Button Content="Вход" VerticalAlignment="Top" HorizontalAlignment="Center"  Margin="0 140 0 0" 
                 Background="#00FFFFFF" BorderThickness="0"
-                   Foreground="#E3E5EC" FontWeight="Bold" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam"/>
+                   Foreground="#E3E5EC" FontWeight="Bold" FontSize="18" FontFamily="/UI;component/Fonts/#Amsterdam"
+                Style="{DynamicResource PanelButtonStyle}"/>
 
         <Button Name="NewsButton" Content="НОВОСТИ" VerticalAlignment="Top" HorizontalAlignment="Center"
                 Margin="109,184,106,0" Background="#00FFFFFF" BorderThickness="0"
                    Foreground="#E3E5EC" FontSize="18" FontFamily="/UI;component/Fonts/#Cleanvertising"
-                Click="NewsButton_Click"/>
+                Click="NewsButton_Click"
+                Style="{DynamicResource PanelButtonStyle}"/>
 
         <Button Name="CoursesButton" Content="КУРСЫ" VerticalAlignment="Top" HorizontalAlignment="Center" 
                 Margin="121,229,118,0" Background="#00FFFFFF" BorderThickness="0"
-                   Foreground="#E3E5EC" FontSize="18" FontFamily="/UI;component/Fonts/#Cleanvertising"/>
+                   Foreground="#E3E5EC" FontSize="18" FontFamily="/UI;component/Fonts/#Cleanvertising"
+                Style="{DynamicResource PanelButtonStyle}"/>
 
         <Button Name="CpecialsButton" Content="СПЕЦИАЛЬНОСТИ" VerticalAlignment="Top" HorizontalAlignment="Center" 
                 Margin="74,274,72,0" Background="#00FFFFFF" BorderThickness="0"
                    Foreground="#E3E5EC" FontSize="18" FontFamily="/UI;component/Fonts/#Cleanvertising"
-                Click="CpecialsButton_Click"/>
+                Click="CpecialsButton_Click" Style="{DynamicResource PanelButtonStyle}"/>
 
         <Button Name="ScheduleButton" Content="РАСПИСАНИЕ" VerticalAlignment="Top" HorizontalAlignment="Center" 
                 Margin="93,319,89,0" Background="#00FFFFFF" BorderThickness="0"
-                   Foreground="#E3E5EC" FontSize="18" FontFamily="/UI;component/Fonts/#Cleanvertising"/>
+                   Foreground="#E3E5EC" FontSize="18" FontFamily="/UI;component/Fonts/#Cleanvertising"
+                Style="{DynamicResource PanelButtonStyle}"/>
 
         <Button Name="AboutCollegeButton" Content="О КОЛЛЕДЖЕ" VerticalAlignment="Top" HorizontalAlignment="Center" 
                 Margin="94,364,91,0" Background="#00FFFFFF" BorderThickness="0"
                 Foreground="#E3E5EC" FontSize="18" FontFamily="/UI;component/Fonts/#Cleanvertising"
-                Click="AboutCollegeButton_Click"/>
+                Click="AboutCollegeButton_Click" Style="{DynamicResource PanelButtonStyle}"/>
 
         <Button Name="AboutAppButton" Content="О приложении" VerticalAlignment="Bottom" HorizontalAlignment="Center" 
                 Margin="0 0 0 10" Background="#00FFFFFF" BorderThickness="0"
-                   Foreground="#E3E5EC" FontSize="18" FontFamily="/UI;component/Fonts/#Cleanvertising"/>
+                   Foreground="#E3E5EC" FontSize="18" FontFamily="/UI;component/Fonts/#Cleanvertising"
+                Style="{DynamicResource PanelButtonStyle}"/>
         <Rectangle Name="SelectZone" Height="40" VerticalAlignment="Top" HorizontalAlignment="Stretch" Fill="#F3F6FF" 
                    Margin="0" Panel.ZIndex="-1"/>
     </Grid>
