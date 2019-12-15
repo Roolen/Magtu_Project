@@ -113,6 +113,7 @@
       <DependentUpon>Specialties.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="ViewModels\LogInViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="Views\LogInWindow.xaml.cs">
       <DependentUpon>LogInWindow.xaml</DependentUpon>

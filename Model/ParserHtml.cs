@@ -1,9 +1,13 @@
 ﻿using System;
+using System.Net.Http;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using AngleSharp;
 using System.Linq;
+using System.IO;
+using System.Threading;
+using AngleSharp.Html.Dom;
 
 namespace Model
 {
@@ -28,21 +32,21 @@ namespace Model
 
             return news.ToArray();
         }
-    }
 
-    public class News
-    {
-        public string Title { get; }
-        public string Author { get; }
-        public string PublishDate { get; }
-        public StringBuilder Content { get; }
-
-        public News(string title, string author, string publishDate, StringBuilder content)
+        public static async Task<string> Authorize(string user, string password)
         {
-            Title = title;
-            Author = author;
-            PublishDate = publishDate;
-            Content = content;
+            var config = Configuration.Default.WithDefaultLoader().WithDefaultCookies();
+            var document = await BrowsingContext.New(config).OpenAsync("https://newlms.magtu.ru/login/index.php");
+
+            var loginToken = document.QuerySelectorAll("#login input[name=logintoken]").First().GetAttribute("value");
+
+            var form = (IHtmlFormElement) document.QuerySelector("#login");
+            await form.SubmitAsync(new { username = user, password = password, logintoken = loginToken });
+            
+            var cookie = document.Cookie;
+            var idSession = cookie.Split(new char[] { '=' })[1];
+
+            return (idSession != null) ? idSession : "";
         }
     }
 }

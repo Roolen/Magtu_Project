@@ -3,9 +3,14 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:UI.ViewModels"
         xmlns:local="clr-namespace:UI.Views"
         mc:Ignorable="d"
-        Title="LogInWindow" Height="400" Width="500" ResizeMode="NoResize" WindowStyle="None">
+        Title="LogInWindow" Height="400" Width="500" ResizeMode="NoResize" WindowStyle="None"
+        DataContext="{DynamicResource LogInViewModel}">
+    <Window.Resources>
+        <vm:LogInViewModel x:Key="LogInViewModel"/>
+    </Window.Resources>
     <Grid>
         <Rectangle Panel.ZIndex="-2">
             <Rectangle.Fill>
@@ -28,27 +33,27 @@
                Margin="0 0 0 210"/>
         <TextBox Name="LoginField" Width="200" Height="30" Margin="0 0 0 150"
                  VerticalAlignment="Center" HorizontalAlignment="Center"
-                 VerticalContentAlignment="Center"
-                 Style="{DynamicResource FieldStyle}"/>
+                 VerticalContentAlignment="Center"/>
         
         <Label Content="Пароль" HorizontalAlignment="Center" VerticalAlignment="Center"
                FontSize="16" Foreground="White" FontFamily="/UI;component/Fonts/#Amsteram"
                Margin="0 0 0 60"/>
         <TextBox Name="PasswordField" Width="200" Height="30" Margin="0 0 0 0"
                  VerticalAlignment="Center" HorizontalAlignment="Center"
-                 VerticalContentAlignment="Center"
-                 Style="{DynamicResource FieldStyle}"/>
+                 VerticalContentAlignment="Center"/>
 
         <Button Name="LogInButton" Width="100" Height="30"
                 Content="Войти" VerticalAlignment="Bottom" HorizontalAlignment="Center"
                 FontSize="18" Foreground="#024669" FontFamily="/UI;component/Fonts/#Amsterdam"
                 Margin="0 0 0 100"
-                Style="{DynamicResource RadiusButtonStyle}"/>
+                Style="{DynamicResource RadiusButtonStyle}"
+                Click="LogInButton_Click"/>
 
         <Button Name="CancelButton" Content="отмена"
                 VerticalAlignment="Bottom" HorizontalAlignment="Center"
                 FontSize="16" Foreground="White" FontFamily="/UI;component/Fonts/#Amsterdam"
                 Margin="0 0 0 20"
-                Style="{DynamicResource PanelButtonStyle}"/>
+                Style="{DynamicResource PanelButtonStyle}"
+                Click="CancelButton_Click"/>
     </Grid>
 </Window>
