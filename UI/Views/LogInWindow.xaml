@@ -26,8 +26,13 @@
         
         <Label Content="Авторизация" HorizontalAlignment="Center" VerticalAlignment="Top"
                FontSize="20" Foreground="White" FontFamily="/UI;component/Fonts/#Amsterdam"/>
-        
-        
+
+        <Label Name="errorLabel" Content="Ошибка входа, возможно неверный логин и/или пароль."
+               HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0 35 0 0"
+               FontSize="16" Foreground="Red" FontFamily="/UI;component/Fonts/#Amsterdam"
+               Visibility="Hidden"/>
+
+
         <Label Content="Логин" HorizontalAlignment="Center" VerticalAlignment="Center"
                FontSize="16" Foreground="White" FontFamily="/UI;component/Fonts/#Amsteram"
                Margin="0 0 0 210"/>
@@ -41,7 +46,13 @@
         <TextBox Name="PasswordField" Width="200" Height="30" Margin="0 0 0 0"
                  VerticalAlignment="Center" HorizontalAlignment="Center"
                  VerticalContentAlignment="Center"/>
+        
+       <Label Name="errorCountsLabel" Content=""
+               HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0 0 0 40"
+               FontSize="16" Foreground="Red" FontFamily="/UI;component/Fonts/#Amsterdam"
+               Visibility="Hidden"/>
 
+        
         <Button Name="LogInButton" Width="100" Height="30"
                 Content="Войти" VerticalAlignment="Bottom" HorizontalAlignment="Center"
                 FontSize="18" Foreground="#024669" FontFamily="/UI;component/Fonts/#Amsterdam"

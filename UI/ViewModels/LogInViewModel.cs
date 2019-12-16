@@ -4,15 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Model;
+using UI.Share;
 
 namespace UI.ViewModels
 {
     class LogInViewModel: BaseViewModel
     {
-        public void LogIn(string name, string password)
+        public void LogIn(string name, string password, Config config)
         {
-            Task task = Task.Factory.StartNew(async () => { await ParserHtml.Authorize(name, password); });
-            
+            var task = Task.Run(() => ParserHtml.Authorize(name, password));
+            //task.Wait();
+            config.idSession = task.Result;
         }
     }
 }

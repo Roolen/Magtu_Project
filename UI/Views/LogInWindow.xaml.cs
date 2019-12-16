@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using UI.ViewModels;
+using UI.Share;
+using System.Timers;
 
 namespace UI.Views
 {
@@ -20,11 +22,12 @@ namespace UI.Views
     /// </summary>
     public partial class LogInWindow : Window
     {
-        public LogInWindow()
+        private Config _config;
+        public LogInWindow(Config config)
         {
             InitializeComponent();
 
-
+            _config = config;
         }
 
         private void DragPlace_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
@@ -37,14 +40,37 @@ namespace UI.Views
             this.Close();
         }
 
+        int counterTrys = 0;
         private void LogInButton_Click(object sender, RoutedEventArgs e)
         {
+            Timer timer = new Timer();
+            timer.Interval = 10_000;
+            counterTrys++;
+
+            if (counterTrys == 3)
+            {
+                timer.Elapsed += new ElapsedEventHandler((x, y) =>
+                {
+                    counterTrys = 0;
+                    errorCountsLabel.Visibility = Visibility.Hidden;
+                });
+                timer.Start();
+
+                errorCountsLabel.Content = "Превышен лимит попыток.";
+                errorCountsLabel.Visibility = Visibility.Visible;
+            }
+            if (counterTrys > 3) return;
             var vm = DataContext as LogInViewModel;
             if (vm == null) return;
 
             string name = LoginField.Text;
             string password = PasswordField.Text;
-            vm.LogIn(name, password);
+            vm.LogIn(name, password, _config);
+
+            if (_config.idSession == "")
+            {
+                errorLabel.Visibility = Visibility.Visible;
+            }
         }
     }
 }

@@ -46,6 +46,11 @@ namespace Model
             var cookie = document.Cookie;
             var idSession = cookie.Split(new char[] { '=' })[1];
 
+            var profDoc = await BrowsingContext.New(config).OpenAsync("https://newlms.magtu.ru/user/profile.php");
+            var checkElement = profDoc.QuerySelector("#modal-header h4");
+            var isAuth = (checkElement?.TextContent == "Подтвердить") ? false
+                                                                     : true;
+            if (isAuth == false) return "";
             return (idSession != null) ? idSession : "";
         }
     }

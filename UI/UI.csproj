@@ -112,6 +112,7 @@
     <Compile Include="Controls\Specialties.xaml.cs">
       <DependentUpon>Specialties.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Share\Config.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\LogInViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />

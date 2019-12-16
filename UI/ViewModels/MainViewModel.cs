@@ -11,6 +11,7 @@ using System.Windows.Controls;
 using System.Windows.Threading;
 using UI.Controls;
 using UI.Views;
+using UI.Share;
 
 namespace UI.ViewModels
 {
@@ -19,6 +20,7 @@ namespace UI.ViewModels
         public ObservableCollection<object> ContentPanel { get; set; }
         private bool IsLoading = false;
         private LogInWindow LogInWindow = null;
+        private Config config = new Config();
 
         string _address = @"https://newlms.magtu.ru/";
 
@@ -31,7 +33,7 @@ namespace UI.ViewModels
         {
             if (LogInWindow != null) return;
 
-            LogInWindow = new LogInWindow();
+            LogInWindow = new LogInWindow(config);
             LogInWindow.Show();
 
             LogInWindow.Closed += new EventHandler((sender, e) =>
