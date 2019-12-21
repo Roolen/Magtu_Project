@@ -50,8 +50,20 @@ namespace Model
             var checkElement = profDoc.QuerySelector("#modal-header h4");
             var isAuth = (checkElement?.TextContent == "Подтвердить") ? false
                                                                      : true;
-            if (isAuth == false) return "";
-            return (idSession != null) ? idSession : "";
+            if (isAuth == false) return null;
+            return idSession ?? null;
+        }
+
+        public static async Task<string> GetAvatarAddress(string idSession)
+        {
+            var config = Configuration.Default.WithDefaultLoader().WithDefaultCookies();
+            var context = BrowsingContext.New(config); 
+            context.SetCookie(new Url("https://newlms.magtu.ru/login/index.php"), "MoodleSession=" + idSession);
+            var document = await context.OpenAsync("https://newlms.magtu.ru/login/index.php");
+
+            var avatar = document.QuerySelector(".userpicture")?.Attributes?.GetNamedItem("src")?.Value;
+
+            return avatar;
         }
     }
 }

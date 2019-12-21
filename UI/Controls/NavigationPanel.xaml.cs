@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,10 +25,15 @@ namespace UI.Controls
         public event Action NewsButtonClick;
         public event Action CpecialsButtonClick;
         public event Action AboutCollegeButtonClick;
+
         public NavigationPanel()
         {
             InitializeComponent();
-            
+        }
+
+        public void avatarChange(Image avatar)
+        {
+            AvatarImage.Source = avatar.Source;
         }
 
         private static IEnumerable<T> FindVisualChildren<T>(DependencyObject depObj) where T : DependencyObject

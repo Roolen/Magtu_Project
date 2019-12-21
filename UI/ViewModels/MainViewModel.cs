@@ -12,15 +12,19 @@ using System.Windows.Threading;
 using UI.Controls;
 using UI.Views;
 using UI.Share;
+using System.Net;
+using System.Windows.Media.Imaging;
 
 namespace UI.ViewModels
 {
     class MainViewModel : BaseViewModel
     {
+        public event Action AvatarChange;
+
         public ObservableCollection<object> ContentPanel { get; set; }
         private bool IsLoading = false;
         private LogInWindow LogInWindow = null;
-        private Config config = new Config();
+        public Config config = new Config();
 
         string _address = @"https://newlms.magtu.ru/";
 
@@ -86,6 +90,38 @@ namespace UI.ViewModels
             IsLoading = false;
             ContentPanel.Clear();
             ContentPanel.Add(new AboutCollege());
+        }
+
+        public void ChangeAuth(object dispatcher)
+        {
+            while (true)
+            {
+                if (config.idSession == null ||
+                    config.AvatarAddress == null)
+                {
+                    Thread.Sleep(500);
+                    continue;
+                }
+
+                var client = new WebClient();
+                client.DownloadFileTaskAsync(config.AvatarAddress, "avatar.jpg").Wait();
+
+                ((Dispatcher)dispatcher).BeginInvoke(new Action(() =>
+                {
+                    Image img = new Image();
+                    BitmapImage src = new BitmapImage();
+                    src.BeginInit();
+                    src.UriSource = new Uri(Environment.CurrentDirectory + "/avatar.jpg", UriKind.Absolute);
+                    src.EndInit();
+                    img.Source = src;
+                    img.Stretch = System.Windows.Media.Stretch.Uniform;
+                    config.AvatarImage = img;
+
+                    AvatarChange.Invoke();
+                }));
+
+                break;
+            }
         }
     }
 }

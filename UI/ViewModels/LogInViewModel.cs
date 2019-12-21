@@ -15,6 +15,10 @@ namespace UI.ViewModels
             var task = Task.Run(() => ParserHtml.Authorize(name, password));
             //task.Wait();
             config.idSession = task.Result;
+
+            if (config.idSession == null) return;
+            var taskAv = Task.Run(() => ParserHtml.GetAvatarAddress(config.idSession));
+            config.AvatarAddress = taskAv.Result;
         }
     }
 }

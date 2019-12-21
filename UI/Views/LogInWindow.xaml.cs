@@ -14,6 +14,7 @@ using System.Windows.Shapes;
 using UI.ViewModels;
 using UI.Share;
 using System.Timers;
+using System.Windows.Threading;
 
 namespace UI.Views
 {
@@ -40,37 +41,44 @@ namespace UI.Views
             this.Close();
         }
 
-        int counterTrys = 0;
+        int counterTryes = 0;
         private void LogInButton_Click(object sender, RoutedEventArgs e)
         {
+            Dispatcher dispatcher = Dispatcher;
             Timer timer = new Timer();
             timer.Interval = 10_000;
-            counterTrys++;
+            counterTryes++;
 
-            if (counterTrys == 3)
+            if (counterTryes == 3)
             {
                 timer.Elapsed += new ElapsedEventHandler((x, y) =>
                 {
-                    counterTrys = 0;
-                    errorCountsLabel.Visibility = Visibility.Hidden;
+                    counterTryes = 0;
+                    dispatcher.BeginInvoke(new Action(() =>
+                    {
+                        errorCountsLabel.Visibility = Visibility.Hidden;
+                    }));
                 });
                 timer.Start();
 
                 errorCountsLabel.Content = "Превышен лимит попыток.";
                 errorCountsLabel.Visibility = Visibility.Visible;
             }
-            if (counterTrys > 3) return;
+            if (counterTryes > 3) return;
             var vm = DataContext as LogInViewModel;
             if (vm == null) return;
 
             string name = LoginField.Text;
-            string password = PasswordField.Text;
+            string password = PasswordField.Password;
             vm.LogIn(name, password, _config);
 
-            if (_config.idSession == "")
+            if (_config.idSession == null)
             {
                 errorLabel.Visibility = Visibility.Visible;
+                return;
             }
+
+            this.Close();
         }
     }
 }

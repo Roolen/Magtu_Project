@@ -60,6 +60,18 @@ namespace UI
             });
             NavPanel.CpecialsButtonClick += vm.PresentSpecialities;
             NavPanel.AboutCollegeButtonClick += vm.PresentAboutCollege;
+
+
+            Thread avatarCheck = new Thread(new ParameterizedThreadStart(vm.ChangeAuth));
+            avatarCheck.Start(Dispatcher);
+            vm.AvatarChange += ChangeAvatar;
+        }
+
+        private void ChangeAvatar()
+        {
+            var vm = DataContext as MainViewModel;
+            if (vm == null) return;
+            NavPanel.avatarChange(vm.config.AvatarImage);
         }
     }
 }
