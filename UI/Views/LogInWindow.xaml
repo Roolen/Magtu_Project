@@ -43,7 +43,7 @@
         <Label Content="Пароль" HorizontalAlignment="Center" VerticalAlignment="Center"
                FontSize="16" Foreground="White" FontFamily="/UI;component/Fonts/#Amsteram"
                Margin="0 0 0 60"/>
-        <TextBox Name="PasswordField" Width="200" Height="30" Margin="0 0 0 0"
+        <PasswordBox Name="PasswordField" Width="200" Height="30" Margin="0 0 0 0"
                  VerticalAlignment="Center" HorizontalAlignment="Center"
                  VerticalContentAlignment="Center"/>
         
