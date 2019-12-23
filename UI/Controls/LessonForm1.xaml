@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="UI.Controls.LessonForm1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:UI.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="60" Width="455">
+    <Grid>
+        <Rectangle HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" 
+                   Width="51" Margin="0,5,0,0"
+                   RadiusY="12" RadiusX="12">
+            <Rectangle.Fill>
+                <LinearGradientBrush>
+                    <GradientStop Color="#4C9FC9" Offset="1"/>
+                    <GradientStop Color="#1B6170" Offset="0"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label Content="2" HorizontalAlignment="Left" FontSize="18" VerticalContentAlignment="Center"
+               VerticalAlignment="Top" Width="50" Height="50" HorizontalContentAlignment="Center"
+               Name="LessonNumber" Margin="1,5,0,0" FontFamily="cleanvertising" Foreground="White" />
+        
+        <Label Content="Иностранный язык" HorizontalContentAlignment="Left" Margin="51,1,-1,0"
+               VerticalAlignment="Top" Height="32" FontSize="18" Name="LessonName"
+               FontFamily="cleanvertising" Foreground="#024669"/>
+        
+        <Label Content="Костина Д.Ф." HorizontalAlignment="Left" Margin="51,28,0,0"
+               VerticalAlignment="Top" Width="345" FontSize="11" Height="27" Name="LessonTeacher"
+               FontFamily="cleanvertising" Foreground="#024669"/>
+        
+        <Label Content="M209" HorizontalAlignment="Left" Margin="401,0,-39,0"
+               VerticalAlignment="Top" Height="33" Width="55" FontSize="18" Name="LessonLocation"
+               FontFamily="cleanvertising" Foreground="#024669"/>
+
+    </Grid>
+</UserControl>

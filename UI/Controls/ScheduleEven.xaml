@@ -1,0 +1,746 @@
+﻿<Page x:Class="UI.Controls.ScheduleEven"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:UI.Controls"
+      mc:Ignorable="d" d:DesignWidth="960"
+      Title="Schedule" Height="1500">
+
+    <Grid>
+        <Grid Margin="0,0,0,884">
+            <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left"
+                   Height="614" VerticalAlignment="Top" Width="960"
+                   RadiusY="12" RadiusX="12"/>
+            <Label Content="Нечётная неделя" HorizontalContentAlignment="Center" FontSize="24"
+               Margin="80,0" VerticalAlignment="Top" Width="800"/>
+
+
+            <StackPanel HorizontalAlignment="Left" Height="251" Orientation="vertical"
+                    Margin="3,73,0,0" VerticalAlignment="Top" Width="320">
+                <Grid Height="50">
+                    <Rectangle HorizontalAlignment="Left" Height="50"
+                   VerticalAlignment="Top" 
+                   Width="51" Margin="0,0,0,0"
+                   RadiusY="12" RadiusX="12">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#4C9FC9" Offset="1"/>
+                                <GradientStop Color="#1B6170" Offset="0"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Label Content="2" HorizontalAlignment="Left" FontSize="18" VerticalContentAlignment="Center"
+                    VerticalAlignment="Top" Width="50" Height="50" HorizontalContentAlignment="Center"
+                    Margin="1,0,0,0" FontFamily="cleanvertising" Foreground="White" />
+                    <Rectangle HorizontalAlignment="Left" Height="7"
+                   Margin="155,21,0,0" VerticalAlignment="Top"
+                   Width="60" RenderTransformOrigin="0.5,0.5"
+                   RadiusY="12" RadiusX="12">
+                        <Rectangle.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-53.354"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Rectangle.RenderTransform>
+                        <Rectangle.Fill>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#144046" Offset="1"/>
+                                <GradientStop Color="#3E6694" Offset="0"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Label Content="Ин. Яз.(англ)" HorizontalContentAlignment="Left" Margin="51,0,124,18"
+                    VerticalContentAlignment="Top" Height="32" FontSize="18"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="Костина Д.Ф." HorizontalAlignment="Left" Margin="51,23,0,0"
+                    VerticalAlignment="Top" Width="115" FontSize="11" Height="27"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="M209" HorizontalAlignment="Left" Margin="122,23,0,0"
+                    VerticalAlignment="Top" Height="27" Width="52" FontSize="16"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="" HorizontalContentAlignment="Left" Margin="196,11,-21,7"
+                    VerticalContentAlignment="Top" Height="32" FontSize="18"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                </Grid>
+                <Grid Height="50">
+                    <Rectangle HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" 
+                   Width="51" Margin="0,0,0,0"
+                   RadiusY="12" RadiusX="12">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#4C9FC9" Offset="1"/>
+                                <GradientStop Color="#1B6170" Offset="0"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Label Content="3" HorizontalAlignment="Left" FontSize="18" VerticalContentAlignment="Center"
+                    VerticalAlignment="Top" Width="50" Height="50" HorizontalContentAlignment="Center"
+                    Margin="1,0,0,0" FontFamily="cleanvertising" Foreground="White" />
+
+                    <Label Content="МДК.01.02 Прикл.програм." HorizontalContentAlignment="Left" Margin="51,0,10,18"
+                    VerticalContentAlignment="Top" Height="32" FontSize="18"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="Закирова Р.А." HorizontalAlignment="Left" Margin="51,23,0,0"
+                    VerticalAlignment="Top" Width="115" FontSize="11" Height="27"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="А012" HorizontalAlignment="Left" Margin="258,23,0,0"
+                    VerticalAlignment="Top" Height="27" Width="52" FontSize="16"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                </Grid>
+                <Grid Height="50">
+                    <Rectangle HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" 
+                   Width="51" Margin="0,0,0,0"
+                   RadiusY="12" RadiusX="12">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#4C9FC9" Offset="1"/>
+                                <GradientStop Color="#1B6170" Offset="0"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Label Content="4" HorizontalAlignment="Left" FontSize="18" VerticalContentAlignment="Center"
+                    VerticalAlignment="Top" Width="50" Height="50" HorizontalContentAlignment="Center"
+                    Margin="1,0,0,0" FontFamily="cleanvertising" Foreground="White" />
+                    <Label Content="Осн.эконом. (ТО)" HorizontalContentAlignment="Left" Margin="51,0,10,18"
+                    VerticalContentAlignment="Top" Height="32" FontSize="18"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="Балашова И.А." HorizontalAlignment="Left" Margin="51,23,0,0"
+                    VerticalAlignment="Top" Width="115" FontSize="11" Height="27"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="У402" HorizontalAlignment="Left" Margin="258,23,0,0"
+                    VerticalAlignment="Top" Height="27" Width="52" FontSize="16"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                </Grid>
+                <Grid Height="50">
+                    <Rectangle HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" 
+                   Width="51" Margin="0,0,0,0"
+                   RadiusY="12" RadiusX="12">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#4C9FC9" Offset="1"/>
+                                <GradientStop Color="#1B6170" Offset="0"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Label Content="5" HorizontalAlignment="Left" FontSize="18" VerticalContentAlignment="Center"
+                    VerticalAlignment="Top" Width="50" Height="50" HorizontalContentAlignment="Center"
+                    Margin="1,0,0,0" FontFamily="cleanvertising" Foreground="White" />
+                    <Label Content="БЖД (Пр)" HorizontalContentAlignment="Left" Margin="51,0,10,18"
+                    VerticalContentAlignment="Top" Height="32" FontSize="18"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="Демьянова В.В. " HorizontalAlignment="Left" Margin="51,23,0,0"
+                    VerticalAlignment="Top" Width="115" FontSize="11" Height="27"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="У704" HorizontalAlignment="Left" Margin="258,23,0,0"
+                    VerticalAlignment="Top" Height="27" Width="52" FontSize="16"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                </Grid>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left" Height="251" Orientation="vertical"
+                    Margin="320,73,0,0" VerticalAlignment="Top" Width="320">
+                <Grid Height="50">
+                    <Rectangle HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" 
+                   Width="51" Margin="0,0,0,0"
+                   RadiusY="12" RadiusX="12">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#4C9FC9" Offset="1"/>
+                                <GradientStop Color="#1B6170" Offset="0"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Label Content="2" HorizontalAlignment="Left" FontSize="18" VerticalContentAlignment="Center"
+                    VerticalAlignment="Top" Width="50" Height="50" HorizontalContentAlignment="Center"
+                    Margin="1,0,0,0" FontFamily="cleanvertising" Foreground="White" />
+                    <Label Content="Осн.эконом. (ТО)" HorizontalContentAlignment="Left" Margin="51,0,10,18"
+                    VerticalContentAlignment="Top" Height="32" FontSize="18"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="Балашова И.А." HorizontalAlignment="Left" Margin="51,23,0,0"
+                    VerticalAlignment="Top" Width="115" FontSize="11" Height="27"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="У402" HorizontalAlignment="Left" Margin="258,23,0,0"
+                    VerticalAlignment="Top" Height="27" Width="52" FontSize="16"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                </Grid>
+                <Grid Height="50">
+                    <Rectangle HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" 
+                   Width="51" Margin="0,0,0,0"
+                   RadiusY="12" RadiusX="12">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#4C9FC9" Offset="1"/>
+                                <GradientStop Color="#1B6170" Offset="0"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Label Content="3" HorizontalAlignment="Left" FontSize="18" VerticalContentAlignment="Center"
+                    VerticalAlignment="Top" Width="50" Height="50" HorizontalContentAlignment="Center"
+                    Margin="1,0,0,0" FontFamily="cleanvertising" Foreground="White" />
+                    <Label Content="БЖД (ТО)" HorizontalContentAlignment="Left" Margin="51,0,10,18"
+                    VerticalContentAlignment="Top" Height="32" FontSize="18"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="Демьянова В.В. " HorizontalAlignment="Left" Margin="51,23,0,0"
+                    VerticalAlignment="Top" Width="115" FontSize="11" Height="27"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="У704" HorizontalAlignment="Left" Margin="258,23,0,0"
+                    VerticalAlignment="Top" Height="27" Width="52" FontSize="16"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                </Grid>
+                <Grid Height="50">
+                    <Rectangle HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" 
+                   Width="51" Margin="0,0,0,0"
+                   RadiusY="12" RadiusX="12">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#4C9FC9" Offset="1"/>
+                                <GradientStop Color="#1B6170" Offset="0"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Label Content="4" HorizontalAlignment="Left" FontSize="18" VerticalContentAlignment="Center"
+                    VerticalAlignment="Top" Width="50" Height="50" HorizontalContentAlignment="Center"
+                    Margin="1,0,0,0" FontFamily="cleanvertising" Foreground="White" />
+                    <Label Content="МДК.01.02 Прикл.програм." HorizontalContentAlignment="Left" Margin="51,0,10,18"
+                    VerticalContentAlignment="Top" Height="32" FontSize="18"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="Закирова Р.А." HorizontalAlignment="Left" Margin="51,23,0,0"
+                    VerticalAlignment="Top" Width="115" FontSize="11" Height="27"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="А308" HorizontalAlignment="Left" Margin="258,23,0,0"
+                    VerticalAlignment="Top" Height="27" Width="52" FontSize="16"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                </Grid>
+                <Grid Height="50">
+                    <Rectangle HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" 
+                   Width="51" Margin="0,0,0,0"
+                   RadiusY="12" RadiusX="12">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#4C9FC9" Offset="1"/>
+                                <GradientStop Color="#1B6170" Offset="0"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Label Content="5" HorizontalAlignment="Left" FontSize="18" VerticalContentAlignment="Center"
+                    VerticalAlignment="Top" Width="50" Height="50" HorizontalContentAlignment="Center"
+                    Margin="1,0,0,0" FontFamily="cleanvertising" Foreground="White" />
+                    <Label Content="Осн.философ. (ТО)" HorizontalContentAlignment="Left" Margin="51,0,10,18"
+                    VerticalContentAlignment="Top" Height="32" FontSize="18"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="Кириллова Т.Д." HorizontalAlignment="Left" Margin="51,23,0,0"
+                    VerticalAlignment="Top" Width="115" FontSize="11" Height="27"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                </Grid>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left" Height="251" Orientation="vertical"
+                    Margin="640,73,0,0" VerticalAlignment="Top" Width="320">
+                <Grid Height="50">
+                    <Rectangle HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" 
+                   Width="51" Margin="0,0,0,0"
+                   RadiusY="12" RadiusX="12">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#4C9FC9" Offset="1"/>
+                                <GradientStop Color="#1B6170" Offset="0"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Label Content="2" HorizontalAlignment="Left" FontSize="18" VerticalContentAlignment="Center"
+                    VerticalAlignment="Top" Width="50" Height="50" HorizontalContentAlignment="Center"
+                    Margin="1,0,0,0" FontFamily="cleanvertising" Foreground="White" />
+                    <Label Content="Физ.культ." HorizontalContentAlignment="Left" Margin="51,0,0,18"
+                    VerticalContentAlignment="Top" Height="32" FontSize="18"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="Габидуллина С.К." HorizontalAlignment="Left" Margin="51,23,0,0"
+                    VerticalAlignment="Top" Width="115" FontSize="11" Height="27"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="Зал1" HorizontalAlignment="Left" Margin="258,23,0,0"
+                    VerticalAlignment="Top" Height="27" Width="52" FontSize="16"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                </Grid>
+                <Grid Height="50">
+                    <Rectangle HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" 
+                   Width="51" Margin="0,0,0,0"
+                   RadiusY="12" RadiusX="12">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#4C9FC9" Offset="1"/>
+                                <GradientStop Color="#1B6170" Offset="0"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Label Content="3" HorizontalAlignment="Left" FontSize="18" VerticalContentAlignment="Center"
+                    VerticalAlignment="Top" Width="50" Height="50" HorizontalContentAlignment="Center"
+                    Margin="1,0,0,0" FontFamily="cleanvertising" Foreground="White" />
+                    <Label Content="МДК.01.02 Прикл.програм." HorizontalContentAlignment="Left" Margin="51,0,10,18"
+                    VerticalContentAlignment="Top" Height="32" FontSize="18"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="Закирова Р.А." HorizontalAlignment="Left" Margin="51,23,0,0"
+                    VerticalAlignment="Top" Width="115" FontSize="11" Height="27"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="M209" HorizontalAlignment="Left" Margin="258,23,0,0"
+                    VerticalAlignment="Top" Height="27" Width="52" FontSize="16"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                </Grid>
+                <Grid Height="50">
+                    <Rectangle HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" 
+                   Width="51" Margin="0,0,0,0"
+                   RadiusY="12" RadiusX="12">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#4C9FC9" Offset="1"/>
+                                <GradientStop Color="#1B6170" Offset="0"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Label Content="4" HorizontalAlignment="Left" FontSize="18" VerticalContentAlignment="Center"
+                    VerticalAlignment="Top" Width="50" Height="50" HorizontalContentAlignment="Center"
+                    Margin="1,0,0,0" FontFamily="cleanvertising" Foreground="White" />
+                    <Label Content="БЖД (Пр)" HorizontalContentAlignment="Left" Margin="51,0,124,18"
+                    VerticalContentAlignment="Top" Height="32" FontSize="18"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="Демьянова В.В. " HorizontalAlignment="Left" Margin="51,23,0,0"
+                    VerticalAlignment="Top" Width="115" FontSize="11" Height="27"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="У704" HorizontalAlignment="Left" Margin="268,23,0,0"
+                    VerticalAlignment="Top" Height="27" Width="52" FontSize="16"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                </Grid>
+                <Grid Height="50"/>
+                <Grid Height="50"/>
+            </StackPanel>
+
+            <StackPanel HorizontalAlignment="Left" Height="251" Orientation="vertical"
+                    Margin="3,353,0,0" VerticalAlignment="Top" Width="320">
+                <Grid Height="50">
+                    <Rectangle HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" 
+                   Width="51" Margin="0,0,0,0"
+                   RadiusY="12" RadiusX="12">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#4C9FC9" Offset="1"/>
+                                <GradientStop Color="#1B6170" Offset="0"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Label Content="1" HorizontalAlignment="Left" FontSize="18" VerticalContentAlignment="Center"
+                    VerticalAlignment="Top" Width="50" Height="50" HorizontalContentAlignment="Center"
+                    Margin="1,0,0,0" FontFamily="cleanvertising" Foreground="White" />
+                    <Rectangle HorizontalAlignment="Left" Height="7"
+                   Margin="131,22,0,0" VerticalAlignment="Top"
+                   Width="60" RenderTransformOrigin="0.5,0.5"
+                   RadiusY="12" RadiusX="12">
+                        <Rectangle.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-53.354"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Rectangle.RenderTransform>
+                        <Rectangle.Fill>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#144046" Offset="1"/>
+                                <GradientStop Color="#3E6694" Offset="0"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Label Content="Базы данных" HorizontalContentAlignment="Left" Margin="181,0,-22,18"
+                    VerticalContentAlignment="Top" Height="32" FontSize="18"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="Кучерова Н.В." HorizontalAlignment="Left" Margin="181,23,0,0"
+                    VerticalAlignment="Top" Width="115" FontSize="11" Height="27"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="А403" HorizontalAlignment="Left" Margin="268,23,0,0"
+                    VerticalAlignment="Top" Height="27" Width="52" FontSize="16"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                </Grid>
+                <Grid Height="50">
+                    <Rectangle HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" 
+                   Width="51" Margin="0,0,0,0"
+                   RadiusY="12" RadiusX="12">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#4C9FC9" Offset="1"/>
+                                <GradientStop Color="#1B6170" Offset="0"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Label Content="2" HorizontalAlignment="Left" FontSize="18" VerticalContentAlignment="Center"
+                    VerticalAlignment="Top" Width="50" Height="50" HorizontalContentAlignment="Center"
+                    Margin="1,0,0,0" FontFamily="cleanvertising" Foreground="White" />
+                    <Rectangle HorizontalAlignment="Left" Height="7"
+                   Margin="133,19,0,0" VerticalAlignment="Top"
+                   Width="60" RenderTransformOrigin="0.5,0.5"
+                   RadiusY="12" RadiusX="12">
+                        <Rectangle.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-53.354"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Rectangle.RenderTransform>
+                        <Rectangle.Fill>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#144046" Offset="1"/>
+                                <GradientStop Color="#3E6694" Offset="0"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Label Content="Ин. Яз.(англ)" HorizontalContentAlignment="Left" Margin="182,0,-7,18"
+                    VerticalContentAlignment="Top" Height="32" FontSize="18"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="Павловская Ю.В." HorizontalAlignment="Left" Margin="182,23,0,0"
+                    VerticalAlignment="Top" Width="115" FontSize="11" Height="27"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="M215" HorizontalAlignment="Left" Margin="268,23,0,0"
+                    VerticalAlignment="Top" Height="27" Width="52" FontSize="16"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                </Grid>
+                <Grid Height="50">
+                    <Rectangle HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" 
+                   Width="51" Margin="0,0,0,0"
+                   RadiusY="12" RadiusX="12">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#4C9FC9" Offset="1"/>
+                                <GradientStop Color="#1B6170" Offset="0"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Label Content="3" HorizontalAlignment="Left" FontSize="18" VerticalContentAlignment="Center"
+                    VerticalAlignment="Top" Width="50" Height="50" HorizontalContentAlignment="Center"
+                    Margin="1,0,0,0" FontFamily="cleanvertising" Foreground="White" />
+                    <Rectangle HorizontalAlignment="Left" Height="7"
+                   Margin="138,20,0,0" VerticalAlignment="Top"
+                   Width="60" RenderTransformOrigin="0.5,0.5"
+                   RadiusY="12" RadiusX="12">
+                        <Rectangle.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-53.354"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Rectangle.RenderTransform>
+                        <Rectangle.Fill>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#144046" Offset="1"/>
+                                <GradientStop Color="#3E6694" Offset="0"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Label Content="При.програм." HorizontalContentAlignment="Left" Margin="184,0,-9,18"
+                    VerticalContentAlignment="Top" Height="32" FontSize="18"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="Закирова Р.А." HorizontalAlignment="Left" Margin="184,23,0,0"
+                    VerticalAlignment="Top" Width="115" FontSize="11" Height="27"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="А311" HorizontalAlignment="Left" Margin="268,23,0,0"
+                    VerticalAlignment="Top" Height="27" Width="52" FontSize="16"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                </Grid>
+                <Grid Height="50">
+                    <Rectangle HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" 
+                   Width="51" Margin="0,0,0,0"
+                   RadiusY="12" RadiusX="12">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#4C9FC9" Offset="1"/>
+                                <GradientStop Color="#1B6170" Offset="0"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Label Content="4" HorizontalAlignment="Left" FontSize="18" VerticalContentAlignment="Center"
+                    VerticalAlignment="Top" Width="50" Height="50" HorizontalContentAlignment="Center"
+                    Margin="1,0,0,0" FontFamily="cleanvertising" Foreground="White" />
+                    <Rectangle HorizontalAlignment="Left" Height="7"
+                   Margin="155,21,0,0" VerticalAlignment="Top"
+                   Width="60" RenderTransformOrigin="0.5,0.5"
+                   RadiusY="12" RadiusX="12">
+                        <Rectangle.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-53.354"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Rectangle.RenderTransform>
+                        <Rectangle.Fill>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#144046" Offset="1"/>
+                                <GradientStop Color="#3E6694" Offset="0"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Label Content="МДК.02.01 КС" HorizontalContentAlignment="Left" Margin="51,0,124,18"
+                    VerticalContentAlignment="Top" Height="32" FontSize="18"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="Старков А.Н." HorizontalAlignment="Left" Margin="51,23,0,0"
+                    VerticalAlignment="Top" Width="115" FontSize="11" Height="27"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="1/249" HorizontalAlignment="Left" Margin="122,23,0,0"
+                    VerticalAlignment="Top" Height="27" Width="52" FontSize="16"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                </Grid>
+                <Grid Height="50">
+                    <Rectangle HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" 
+                   Width="51" Margin="0,0,0,0"
+                   RadiusY="12" RadiusX="12">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#4C9FC9" Offset="1"/>
+                                <GradientStop Color="#1B6170" Offset="0"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Label Content="5" HorizontalAlignment="Left" FontSize="18" VerticalContentAlignment="Center"
+                    VerticalAlignment="Top" Width="50" Height="50" HorizontalContentAlignment="Center"
+                    Margin="1,0,0,0" FontFamily="cleanvertising" Foreground="White" />
+                    <Rectangle HorizontalAlignment="Left" Height="7"
+                   Margin="155,21,0,0" VerticalAlignment="Top"
+                   Width="60" RenderTransformOrigin="0.5,0.5"
+                   RadiusY="12" RadiusX="12">
+                        <Rectangle.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-53.354"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Rectangle.RenderTransform>
+                        <Rectangle.Fill>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#144046" Offset="1"/>
+                                <GradientStop Color="#3E6694" Offset="0"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Label Content="МДК.02.01 КС" HorizontalContentAlignment="Left" Margin="51,0,124,18"
+                    VerticalContentAlignment="Top" Height="32" FontSize="18"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="Старков А.Н." HorizontalAlignment="Left" Margin="51,23,0,0"
+                    VerticalAlignment="Top" Width="115" FontSize="11" Height="27"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="1/249" HorizontalAlignment="Left" Margin="122,23,0,0"
+                    VerticalAlignment="Top" Height="27" Width="52" FontSize="16"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                </Grid>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left" Height="251" Orientation="vertical"
+                    Margin="320,353,0,0" VerticalAlignment="Top" Width="320">
+                <Grid Height="50">
+                    <Rectangle HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" 
+                   Width="51" Margin="0,0,0,0"
+                   RadiusY="12" RadiusX="12">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#4C9FC9" Offset="1"/>
+                                <GradientStop Color="#1B6170" Offset="0"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Label Content="1" HorizontalAlignment="Left" FontSize="18" VerticalContentAlignment="Center"
+                    VerticalAlignment="Top" Width="50" Height="50" HorizontalContentAlignment="Center"
+                    Margin="1,0,0,0" FontFamily="cleanvertising" Foreground="White" />
+                    <Rectangle HorizontalAlignment="Left" Height="7"
+                   Margin="155,21,0,0" VerticalAlignment="Top"
+                   Width="60" RenderTransformOrigin="0.5,0.5"
+                   RadiusY="12" RadiusX="12">
+                        <Rectangle.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-53.354"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Rectangle.RenderTransform>
+                        <Rectangle.Fill>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#144046" Offset="1"/>
+                                <GradientStop Color="#3E6694" Offset="0"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Label Content="Прикл.програм." HorizontalContentAlignment="Left" Margin="51,0,124,18"
+                    VerticalContentAlignment="Top" Height="32" FontSize="18"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="Закирова Р.А." HorizontalAlignment="Left" Margin="51,23,0,0"
+                    VerticalAlignment="Top" Width="115" FontSize="11" Height="27"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="А311" HorizontalAlignment="Left" Margin="122,23,0,0"
+                    VerticalAlignment="Top" Height="27" Width="52" FontSize="16"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="МДК.02.01" HorizontalContentAlignment="Left" Margin="197,0,-22,18"
+                    VerticalContentAlignment="Top" Height="32" FontSize="18"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="Старков А.Н." HorizontalAlignment="Left" Margin="197,23,0,0"
+                    VerticalAlignment="Top" Width="115" FontSize="11" Height="27"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="1/249" HorizontalAlignment="Left" Margin="268,23,0,0"
+                    VerticalAlignment="Top" Height="27" Width="52" FontSize="16"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                </Grid>
+                <Grid Height="50">
+                    <Rectangle HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" 
+                   Width="51" Margin="0,0,0,0"
+                   RadiusY="12" RadiusX="12">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#4C9FC9" Offset="1"/>
+                                <GradientStop Color="#1B6170" Offset="0"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Label Content="2" HorizontalAlignment="Left" FontSize="18" VerticalContentAlignment="Center"
+                    VerticalAlignment="Top" Width="50" Height="50" HorizontalContentAlignment="Center"
+                    Margin="1,0,0,0" FontFamily="cleanvertising" Foreground="White" />
+                    <Rectangle HorizontalAlignment="Left" Height="7"
+                   Margin="155,21,0,0" VerticalAlignment="Top"
+                   Width="60" RenderTransformOrigin="0.5,0.5"
+                   RadiusY="12" RadiusX="12">
+                        <Rectangle.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-53.354"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Rectangle.RenderTransform>
+                        <Rectangle.Fill>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#144046" Offset="1"/>
+                                <GradientStop Color="#3E6694" Offset="0"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Label Content="Базы данных" HorizontalContentAlignment="Left" Margin="51,0,124,18"
+                    VerticalContentAlignment="Top" Height="32" FontSize="18"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="Кучерова Н.В." HorizontalAlignment="Left" Margin="51,23,0,0"
+                    VerticalAlignment="Top" Width="115" FontSize="11" Height="27"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="А403" HorizontalAlignment="Left" Margin="122,23,0,0"
+                    VerticalAlignment="Top" Height="27" Width="52" FontSize="16"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="МДК.02.01" HorizontalContentAlignment="Left" Margin="197,0,-22,18"
+                    VerticalContentAlignment="Top" Height="32" FontSize="18"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="Старков А.Н." HorizontalAlignment="Left" Margin="197,23,0,0"
+                    VerticalAlignment="Top" Width="115" FontSize="11" Height="27"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="1/249" HorizontalAlignment="Left" Margin="268,23,0,0"
+                    VerticalAlignment="Top" Height="27" Width="52" FontSize="16"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                </Grid>
+                <Grid Height="50">
+                    <Rectangle HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" 
+                   Width="51" Margin="0,0,0,0"
+                   RadiusY="12" RadiusX="12">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#4C9FC9" Offset="1"/>
+                                <GradientStop Color="#1B6170" Offset="0"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Label Content="3" HorizontalAlignment="Left" FontSize="18" VerticalContentAlignment="Center"
+                    VerticalAlignment="Top" Width="50" Height="50" HorizontalContentAlignment="Center"
+                    Margin="1,0,0,0" FontFamily="cleanvertising" Foreground="White" />
+                    <Label Content="Осн.философ. (ТО)" HorizontalContentAlignment="Left" Margin="51,0,10,18"
+                    VerticalContentAlignment="Top" Height="32" FontSize="18"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="Кириллова Т.Д." HorizontalAlignment="Left" Margin="51,23,0,0"
+                    VerticalAlignment="Top" Width="115" FontSize="11" Height="27"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="M209" HorizontalAlignment="Left" Margin="268,23,0,0"
+                    VerticalAlignment="Top" Height="27" Width="52" FontSize="16"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                </Grid>
+                <Grid Height="50"/>
+                <Grid Height="50"/>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left" Height="251" Orientation="vertical"
+                    Margin="640,353,0,0" VerticalAlignment="Top" Width="320">
+                <Grid Height="50">
+                    <Rectangle HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" 
+                   Width="51" Margin="0,0,0,0"
+                   RadiusY="12" RadiusX="12">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#4C9FC9" Offset="1"/>
+                                <GradientStop Color="#1B6170" Offset="0"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Label Content="1" HorizontalAlignment="Left" FontSize="18" VerticalContentAlignment="Center"
+                    VerticalAlignment="Top" Width="50" Height="50" HorizontalContentAlignment="Center"
+                    Margin="1,0,0,0" FontFamily="cleanvertising" Foreground="White" />
+                    <Label Content="Осн.предпр.деят. (Пр)" HorizontalContentAlignment="Left" Margin="51,0,52,18"
+                    VerticalContentAlignment="Top" Height="32" FontSize="18"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="Гайворонская М.В." HorizontalAlignment="Left" Margin="51,23,0,0"
+                    VerticalAlignment="Top" Width="115" FontSize="11" Height="27"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="У707" HorizontalAlignment="Left" Margin="268,23,0,0"
+                    VerticalAlignment="Top" Height="27" Width="52" FontSize="16"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                </Grid>
+                <Grid Height="50">
+                    <Rectangle HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" 
+                   Width="51" Margin="0,0,0,0"
+                   RadiusY="12" RadiusX="12">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#4C9FC9" Offset="1"/>
+                                <GradientStop Color="#1B6170" Offset="0"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Label Content="2" HorizontalAlignment="Left" FontSize="18" VerticalContentAlignment="Center"
+                    VerticalAlignment="Top" Width="50" Height="50" HorizontalContentAlignment="Center"
+                    Margin="1,0,0,0" FontFamily="cleanvertising" Foreground="White" />
+                    <Label Content="МДК.02.02 Т Базы данных (ТО)" HorizontalContentAlignment="Left" Margin="51,0,10,18"
+                    VerticalContentAlignment="Top" Height="32" FontSize="18"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="Кучерова Н.В." HorizontalAlignment="Left" Margin="51,23,0,0"
+                    VerticalAlignment="Top" Width="115" FontSize="11" Height="27"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                    <Label Content="А403" HorizontalAlignment="Left" Margin="268,23,0,0"
+                    VerticalAlignment="Top" Height="27" Width="52" FontSize="16"
+                    FontFamily="cleanvertising" Foreground="#024669"/>
+                </Grid>
+                <Grid Height="50"/>
+                <Grid Height="50"/>
+                <Grid Height="50"/>
+            </StackPanel>
+            <Label Content="Понедельник" HorizontalContentAlignment="Center" Margin="10,36,637,548"
+                VerticalContentAlignment="Top" Height="32" FontSize="18"
+                FontFamily="cleanvertising" Foreground="#024669"/>
+            <Label Content="Вторник" HorizontalContentAlignment="Center" Margin="328,36,319,548"
+                VerticalContentAlignment="Top" Height="32" FontSize="18"
+                FontFamily="cleanvertising" Foreground="#024669"/>
+            <Label Content="Среда" HorizontalContentAlignment="Center" Margin="646,36,1,548"
+                VerticalContentAlignment="Top" Height="32" FontSize="18"
+                FontFamily="cleanvertising" Foreground="#024669"/>
+            <Label Content="Четверг" HorizontalContentAlignment="Center" Margin="10,321,637,263"
+                VerticalContentAlignment="Top" Height="32" FontSize="18"
+                FontFamily="cleanvertising" Foreground="#024669"/>
+            <Label Content="Пятница" HorizontalContentAlignment="Center" Margin="328,321,319,263"
+                VerticalContentAlignment="Top" Height="32" FontSize="18"
+                FontFamily="cleanvertising" Foreground="#024669"/>
+            <Label Content="Суббота" HorizontalContentAlignment="Center" Margin="641,321,6,263"
+                VerticalContentAlignment="Top" Height="32" FontSize="18"
+                FontFamily="cleanvertising" Foreground="#024669"/>
+        </Grid>
+
+
+
+    </Grid>
+
+
+</Page>
