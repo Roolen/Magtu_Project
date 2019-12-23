@@ -47,6 +47,7 @@
     <Reference Include="System.Text.Encoding.CodePages, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Text.Encoding.CodePages.4.5.0\lib\net461\System.Text.Encoding.CodePages.dll</HintPath>
     </Reference>
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -69,6 +70,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Controls\LessonForm1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\LessonForm2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Controls\Loading.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -78,6 +87,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls\NewsPost.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ScheduleEven.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ScheduleOdd.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -100,6 +117,12 @@
     <Compile Include="Controls\AboutCollege.xaml.cs">
       <DependentUpon>AboutCollege.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\LessonForm1.xaml.cs">
+      <DependentUpon>LessonForm1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LessonForm2.xaml.cs">
+      <DependentUpon>LessonForm2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Loading.xaml.cs">
       <DependentUpon>Loading.xaml</DependentUpon>
     </Compile>
@@ -108,6 +131,12 @@
     </Compile>
     <Compile Include="Controls\NewsPost.xaml.cs">
       <DependentUpon>NewsPost.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ScheduleEven.xaml.cs">
+      <DependentUpon>ScheduleEven.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ScheduleOdd.xaml.cs">
+      <DependentUpon>ScheduleOdd.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\Specialties.xaml.cs">
       <DependentUpon>Specialties.xaml</DependentUpon>
