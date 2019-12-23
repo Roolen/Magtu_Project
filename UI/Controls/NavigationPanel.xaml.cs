@@ -33,7 +33,7 @@ namespace UI.Controls
 
         public void avatarChange(Image avatar)
         {
-            AvatarImage.Source = avatar.Source;
+            AvatarImage.Background = new ImageBrush(avatar.Source);
         }
 
         private static IEnumerable<T> FindVisualChildren<T>(DependencyObject depObj) where T : DependencyObject
